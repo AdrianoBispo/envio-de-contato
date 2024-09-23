@@ -80,10 +80,10 @@ form textarea:focus {
     border-radius: 16px;
 }
 
-form button {
+form button, a {
     padding: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     background: transparent;
     border: 2px solid #f5f5f5;
     color: #f5f5f5;
@@ -91,9 +91,19 @@ form button {
     margin-bottom: 20px;
 }
 
-form button:hover {
+form button, a:hover {
     background: #f5f5f5;
     color: #1d1d2e;
     border: 0px;
     border-radius: 16px;
+}
+
+/* Estilização da página de agradecimento */
+
+#agradecimento__titulo{
+    font-size: 1.5rem;
+}
+
+#agradecimento__botao {
+    text-decoration: none;
 }
