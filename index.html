@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Entre em contato</title>
+</head>
+<body>
+    <section>
+        <!-- Título e descrição da página de contato-->
+        <h2>Contato</h2>
+        <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+
+        <!-- Area do formulário para envio dos dados -->
+        <form action="https://api.staticforms.xyz/submit" method="post"> <!-- Integra a API do Static Forms -->
+            <input type="hidden" name="accessKey" value="d94326f2-ef68-43cf-b26c-e41136a21a84"> <!-- Chave de acesso da API -->
+
+            <!-- Campo de nome -->
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off"/>
+
+            <!-- Campo de e-mail -->
+            <label>E-mail</label>
+            <input type="email" name="email"placeholder="Digite seu e-mail" autocomplete="off"/>
+            
+            <!-- Campo de mensagem -->
+            <label>Mensagem</label>
+            <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off"></textarea>
+            
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html"> <!-- Redireciona para a página de agradecimento -->
+        </form>
+    </section>
+</body>
+</html>
